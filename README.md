@@ -20,6 +20,10 @@ Whole project can be divided into 3 parts:
 Android application allows us to control vehicle remotly using Wi-Fi connection. All the necessary information about connection is displayed as hideable transparent menu. In the top of the screen graphical indicator shows current horizontal declination of camera. Bluetooth/USB gamepad is obligatory to controll vehicle, because no graphic controller is provided.
 
 ## Raspberry software
+<div align="middle" >
+<img src="imgs/vehicle1.JPG" width="45%" height="45%" hspace="10" vspace="10" />
+<img src="imgs/vehicle2.JPG" width="45%" height="45%" hspace="10" vspace="10" />
+</div>
 Theare are 3 independent server application set on it:
 1) Camera movement server
 Simple UDP server implemented in C language, responsible for receiving data from android application in order to control camera position through GPIO pins. Communication with GPIO pins are served by [WiringPi](http://wiringpi.com/) 
@@ -31,10 +35,6 @@ Simple TCP server implemented in C language, responsible for receiving data from
 [RPi_Cam_Web_Interface](https://github.com/silvanmelchior/RPi_Cam_Web_Interface) open-source application is responsible for streaming video from Raspberry camera. [PiViewer](https://github.com/patcat/PiView) application helps convert classic camera preview into stereoscopic one.
 
 ## Hardware
-<div align="middle" >
-<img src="imgs/vehicle1.JPG" width="45%" height="45%" hspace="10" vspace="10" />
-<img src="imgs/vehicle2.JPG" width="45%" height="45%" hspace="10" vspace="10" />
-</div>
 
 Raspberry Pi 3 with [Raspbian OS](https://www.raspberrypi.org/downloads/raspbian/) and all the 3 additional server applications installed works as a main vehicle controller. Four electric motors are controlled by two L298N modules. Camera motion is possible by installed two Hitec HS-81MG servos. Power is provided by 3C 11,1V Li-Po accumulator.
 <img src="imgs/eschema.png" hspace="10" vspace="10" />
