@@ -1,0 +1,6 @@
+[submodule "cameracar-raspberry"]
+	path = cameracar-raspberry
+	url = https://github.com/thirteendollars/cameracar-raspberry.git
+[submodule "cameracar-android"]
+	path = cameracar-android
+	url = https://github.com/thirteendollars/cameracar-android.git
